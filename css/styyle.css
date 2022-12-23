@@ -1,0 +1,367 @@
+/* || RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || VARIABLES */ 
+:root {
+    /* COLORS */
+    --LHT-GRAY: #f8f8f8;
+    --LTH-COLOR: #ffffff;
+    --ORG-COLOR: #ff3300;
+}
+
+/* || GENERAL */
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: var(--LHT-GRAY);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 10px;
+    width: 80%;
+}
+
+header {
+    background-color: #41434f;
+    min-height: 70px;
+    border-bottom: 5px solid var(--ORG-COLOR);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    margin-top: 15px;
+}
+
+.company h1 {
+    color: var(--LTH-COLOR);
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.current {
+    color: var(--ORG-COLOR);
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    color: var(--LTH-COLOR);
+}
+
+li a:hover, a:focus {
+    color: var(--ORG-COLOR);
+    font-weight: bold;
+}
+
+#showcase {
+    background-image: url(/img/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    min-height: 400px;
+}
+
+#showcase .content {
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#showcase .content h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--LTH-COLOR);
+}
+
+#showcase .content p {
+    font-size: 23px;
+    color: var(--LHT-GRAY);
+}
+
+#newsletter {
+    background-color: #41434f;
+    border-bottom: 5px solid var(--ORG-COLOR);
+    box-shadow: 2px 2px 5px;
+}
+
+#newsletter .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#newsletter input {
+    background-color: var(--LHT-GRAY);
+    border: none;
+    border-radius: 15px;
+    padding: 6px;
+}
+
+#newsletter ::placeholder {
+    text-align: center;
+}
+
+#newsletter button {
+    border: none;
+    border-radius: 15px;
+    padding: 6px;
+    margin-top: 5px;
+    background-color: var(--ORG-COLOR);
+    color: var(--LTH-COLOR);
+}
+
+#newsletter .note h4 {
+    color: var(--LTH-COLOR);
+    text-align: center;
+    margin-top: 7px;
+}
+
+#newsletter .newsletter__form {
+    text-align: center;
+}
+
+
+#boxes .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.box {
+    width: 30%;
+    padding: 20px;
+}
+ 
+#boxes .container .box .img {
+    text-align: center;
+}
+
+#boxes .container .box h4 {
+    text-align: center;
+}
+
+#about .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar {
+    background-color: #41434f;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.aside {
+    margin-left: 20px;
+}
+
+.aside label {
+    color: var(--LTH-COLOR);
+    display: block;
+}
+
+.aside ::placeholder {
+    text-align: center;
+}
+.aside input {
+    border: none;
+    padding: 2px;
+    border-radius: 15px;
+}
+
+.aside textarea {
+    border-radius: 15px;
+}
+
+.aside input .message {
+    padding: 5px;
+}
+
+.aside button {
+    background-color: var(--ORG-COLOR);
+    border: none;
+    padding: 5px;
+    border-radius: 15px;
+    width: 30%;
+    color: var(--LTH-COLOR);
+}
+
+.aside h4 {
+    color: var(--LTH-COLOR);
+    text-align: center;
+}
+
+.aside p {
+    color: var(--LTH-COLOR);
+}
+
+#about .services {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-top: 5px;
+    border: 1px solid var(--ORG-COLOR);
+}
+
+#about .services h4 {
+    color: var(--ORG-COLOR);
+}
+
+footer  {
+    background-color: var(--ORG-COLOR);
+    box-shadow: 2px -2px 5px;
+}
+
+footer p {
+    text-align: center;
+    color: var(--LTH-COLOR);
+}
+
+
+.login__container {
+    margin: auto;
+    width: 60%;
+    background-color: #41434f30;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 100px;
+    box-shadow: 2px 2px 6px 2px black;
+}
+
+.login__container label{
+    display: block;
+    color: var(--ORG-COLOR);
+    font-weight: bold;
+}
+
+.login__container input {
+    padding: 3px;
+    border: none;
+    border-radius: 15px;
+    padding: 4px;
+}
+
+.login__container ::placeholder {
+    text-align: center;
+}
+
+.login__container button {
+    width: 30%;
+    border: none;
+    padding: 4px;
+    margin-top: 20px;
+    background-color: var(--ORG-COLOR);
+    color: var(--LTH-COLOR);
+    border-radius: 15px;
+}
+
+.login__container button a {
+    text-decoration: none;
+    color: var(--LTH-COLOR);
+}
+
+.login__container p {
+    margin-top: 20px;
+}
+
+.login__container .heading h1 {
+    font-size: 40px;
+}
+
+.login a {
+    text-decoration: none;
+    color: var(--ORG-COLOR);
+}
+
+@media (max-width: 768px) {
+    header .container {
+        display: block;
+    }
+
+    header .container .nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    header .container .company {
+        display: flex;
+        justify-content: center;
+    }
+
+    #boxes .container  {
+        display: block;
+    }
+
+    #boxes .container .box {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+    }
+
+    #showcase .content p {
+        text-align: center;
+    }
+
+    #about .container {
+        display: block;
+    }
+
+    #about .sidebar {
+        display: block;
+        width: 100%;
+    }
+
+    #about .sidebar form {
+        text-align: center;
+    }
+
+    #about .sidebar .button {
+       display: block;
+       text-align: center;
+    }
+
+    .login__container {
+        width: 100%;
+    }
+}
+
+/* @media (max-width: 320px) {
+    header .container {
+        display: block;
+    }
+
+    header .container .nav {
+        display: flex;
+        justify-content: center;
+        flex-flow: row nowrap;
+    }
+
+    header .container .company {
+        display: flex;
+        justify-content: center;
+    }
+
+    #boxes .container  {
+        display: block;
+    }
+
+    #boxes .container .box {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+    }
+} */
